@@ -34,9 +34,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.header {
   padding: 28px 0;
 }
 
@@ -74,8 +71,38 @@ body {
 
 /* ––––––––– INTRO ––––––––––––– */
 
-.intro {
+.intro__inner {
+  text-align: center;
+  padding: 174px 0 168px 0;
+  border-radius: 24px;
+  background: url('/images/intro-bg.png') no-repeat center #FBFAFF;
+  background-size: cover;
+}
 
+.intro-title {
+  font-weight: var(--fw-bold);
+  font-size: 64px;
+  line-height: 96px;
+  color: var(--c-main-body);
+}
+
+.intro-subtitle {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: var(--fw-regular);
+  color: var(--c-main-body);
+  margin-top: 11px;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 39px;
+  gap: 12px;
+}
+
+.intro-buttons__button {
+  min-width: 232px;
 }
 
 /* ––––––––– END INTRO ––––––––– */
@@ -92,6 +119,7 @@ body {
   color: var(--c-main-white);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 48px;
   border: 0;
   cursor: pointer;
@@ -99,6 +127,7 @@ body {
 
 .button--large {
   font-size: 18px;
+  line-height: 36px;
   height: 60px;
 }
 
@@ -108,11 +137,5 @@ body {
   border: 1px solid var(--c-main-primary);
 }
 
-.h1 {
-  font-weight: var(--fw-bold);
-  font-size: 64px;
-  line-height: 96px;
-  color: var(--c-main-body);
-}
 
 /* ––––––––– END COMPONENTS ––––––––– */
