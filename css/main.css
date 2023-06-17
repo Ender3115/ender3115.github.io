@@ -1,0 +1,115 @@
+:root {
+  --c-main-body: #23155B;
+  --c-main-primary: #8053FF;
+  --c-main-white: #FFFFFF;
+  --c-main-gray: #928CAB;
+  --c-main-gray-light: #928CAB;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ––––––––– HEADER ––––––––– */
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 28px 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo__text {
+  margin-left: 12px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: var(--fw-bold);
+  color: var(--c-main-body)
+}
+
+.header-nav__join-button {
+  margin-left: 60px;
+}
+
+.header-nav__link {
+  font-weight: var(--fw-medium);
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--c-main-body);
+  margin-left: 28px;
+}
+
+.header-nav__link:first-child {
+  margin-left: 0;
+}
+
+/* ––––––––– END HEADER ––––––––– */
+
+
+/* ––––––––– INTRO ––––––––––––– */
+
+.intro {
+
+}
+
+/* ––––––––– END INTRO ––––––––– */
+
+
+/* ––––––––– COMPONENTS ––––––––– */
+
+.button {
+  font-size: 16px;
+  font-weight: var(--fw-medium);
+  padding: 12px 24px;
+  background: var(--c-main-primary);
+  border-radius: 8px;
+  color: var(--c-main-white);
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button--large {
+  font-size: 18px;
+  height: 60px;
+}
+
+.button--outline {
+  background: var(--c-main-white);
+  color: var(--c-main-primary);
+  border: 1px solid var(--c-main-primary);
+}
+
+.h1 {
+
+}
+
+/* ––––––––– END COMPONENTS ––––––––– */
