@@ -88,19 +88,20 @@ body {
 
 .intro-subtitle {
   font-size: 24px;
-  line-height: 59px;
+  line-height: 36px;
   font-weight: var(--fw-regular);
   color: var(--c-main-body);
+  margin-top: 11px;
 }
 
 .intro-buttons {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 39px;
+  gap: 12px;
 }
 
 .intro-buttons__button {
-  margin: 0 11px 0 5px;
   min-width: 232px;
 }
 
@@ -118,19 +119,16 @@ body {
   color: var(--c-main-white);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 48px;
   border: 0;
   cursor: pointer;
 }
 
 .button--large {
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: var(--fw-medium);
   font-size: 18px;
   line-height: 36px;
   height: 60px;
-  background: var(--c-main-primary);
 }
 
 .button--outline {
