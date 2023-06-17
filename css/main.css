@@ -96,19 +96,12 @@ body {
 .intro-buttons {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .intro-buttons__button {
-  padding: 12px 24px;
-  gap: 10px;
   margin: 0 11px 0 5px;
-  border-radius: 8px;
-  font-weight: var(--fw-medium);
-  font-size: 18px;
-  line-height: 36px;
   min-width: 232px;
-  height: 60px;
 }
 
 /* ––––––––– END INTRO ––––––––– */
@@ -131,6 +124,12 @@ body {
 }
 
 .button--large {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+  line-height: 36px;
+  height: 60px;
   background: var(--c-main-primary);
 }
 
