@@ -109,7 +109,10 @@ body {
 }
 
 .h1 {
-
+  font-weight: var(--fw-bold);
+  font-size: 64px;
+  line-height: 96px;
+  color: var(--c-main-body);
 }
 
 /* ––––––––– END COMPONENTS ––––––––– */
