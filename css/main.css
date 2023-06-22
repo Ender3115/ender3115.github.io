@@ -73,20 +73,24 @@ body {
 
 .intro__inner {
   text-align: center;
+  padding-bottom: 200px;
+}
+
+.intro-container {
   padding: 174px 0 168px 0;
   border-radius: 24px;
   background: url('/images/intro-bg.png') no-repeat center #FBFAFF;
   background-size: cover;
 }
 
-.intro-title {
+.intro-container__title {
   font-weight: var(--fw-bold);
   font-size: 64px;
   line-height: 96px;
   color: var(--c-main-body);
 }
 
-.intro-subtitle {
+.intro-container__subtitle {
   font-size: 24px;
   line-height: 36px;
   font-weight: var(--fw-regular);
@@ -94,7 +98,7 @@ body {
   margin-top: 11px;
 }
 
-.intro-buttons {
+.intro-container__buttons {
   display: flex;
   justify-content: center;
   margin-top: 39px;
@@ -107,6 +111,46 @@ body {
 
 /* ––––––––– END INTRO ––––––––– */
 
+/* ––––––––– PIPELINE ––––––––– */
+
+.pipeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.pipeline-header__line {
+  height: 2px;
+  flex: 1;
+  border: 1px solid #F4F5F4;
+}
+
+.pipeline-header__title {
+  font-size: 24px;
+  font-weight: var(--fw-medium);
+  color: var(--c-main-body);
+  margin: 0 34px;
+  flex-shrink: 0;
+}
+
+.pipeline-logos {
+  display: flex;
+  justify-content: center;
+  padding-top: 53px;
+  gap: 20px;
+}
+
+.pipeline-logos__logo {
+  flex-shrink: 0;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ––––––––– END PIPELINE ––––––––– */
 
 /* ––––––––– COMPONENTS ––––––––– */
 
