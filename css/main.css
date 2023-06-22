@@ -117,11 +117,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .pipeline-header__line {
   height: 2px;
-  min-width: 480px;
+  flex: 1;
   border: 1px solid #F4F5F4;
 }
 
@@ -130,6 +132,7 @@ body {
   font-weight: var(--fw-medium);
   color: var(--c-main-body);
   margin: 0 34px;
+  flex-shrink: 0;
 }
 
 .pipeline-logos {
