@@ -159,30 +159,29 @@ body {
   padding: 200px 0;
 }
 
-.fundraising-header {
+.fundraising-title {
   padding-left: 130px;
-  font-size: 52px;
-  line-height: 64px;
-  font-weight: var(--fw-bold);
-  color: var(--c-main-body);
 }
 
-.fundraising-header__string {
+.fundraising-header__highlight {
   color: var(--c-main-primary);
 }
 
 .fundraising-list {
   padding-left: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
-.fundraising-list__item {
-  padding: 24px;
+.fundraising-list .fundraising-item {
+  padding: 30px;
   height: 120px;
   min-width: 580px;
   display: flex;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   border-radius: 8px;
-  margin-bottom: 10px;
+  background-color: #FFFFFF;
 }
 
 .list-item__number {
@@ -194,7 +193,7 @@ body {
 .list-item__text {
   margin-left: 12px;
   font-weight: var(--fw-medium);
-  font-size: 16px;
+  font-size: 18px;
   color: var(--c-main-body);
   line-height: 28px;
 }
@@ -230,5 +229,11 @@ body {
   border: 1px solid var(--c-main-primary);
 }
 
+.h2 {
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: var(--fw-bold);
+  color: var(--c-main-body);
+}
 
 /* ––––––––– END COMPONENTS ––––––––– */
