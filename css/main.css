@@ -135,7 +135,16 @@ body {
 .pipeline-logos {
   display: flex;
   justify-content: center;
-  padding-top: 48px;
+  padding-top: 53px;
+  gap: 20px;
+}
+
+.pipeline-logos__logo {
+  flex-shrink: 0;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ––––––––– END PIPELINE ––––––––– */
