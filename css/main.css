@@ -152,6 +152,54 @@ body {
 
 /* ––––––––– END PIPELINE ––––––––– */
 
+/* ––––––––– FUNDRAISING ––––––––– */
+
+.fundraising__inner {
+  display: flex;
+  padding: 200px 0;
+}
+
+.fundraising-title {
+  padding-left: 130px;
+}
+
+.fundraising-header__highlight {
+  color: var(--c-main-primary);
+}
+
+.fundraising-list {
+  padding-left: 236px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.fundraising-list .fundraising-item {
+  padding: 30px;
+  height: 120px;
+  min-width: 580px;
+  display: flex;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+
+.list-item__number {
+  color: var(--c-main-primary);
+  font-size: 24px;
+  font-weight: var(--fw-bold);
+}
+
+.list-item__text {
+  margin-left: 12px;
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+  color: var(--c-main-body);
+  line-height: 28px;
+}
+
+/* ––––––––– END FUNDRAISING ––––––––– */
+
 /* ––––––––– COMPONENTS ––––––––– */
 
 .button {
@@ -181,5 +229,11 @@ body {
   border: 1px solid var(--c-main-primary);
 }
 
+.h2 {
+  font-size: 52px;
+  line-height: 64px;
+  font-weight: var(--fw-bold);
+  color: var(--c-main-body);
+}
 
 /* ––––––––– END COMPONENTS ––––––––– */
