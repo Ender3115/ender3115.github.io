@@ -163,7 +163,16 @@
 </section>
 <script type="text/babel">
 
-    const FundraisingList = ()=>{
+    const FundraisingItem = (props) => {
+        return (
+            <div className="fundraising-item">
+                <div className="fundraising-item__number">{props.number}</div>
+                <p className="fundraising-item__text">{props.text}</p>
+            </div>
+        )
+    }
+
+    const FundraisingList = () => {
         const data = [
             <span>Without a big budget, it's hard to <br/> approach venture investors</span>,
             <span>VCs don't care about your DeFi idea <br/> – only their gains</span>,
@@ -171,14 +180,7 @@
             <span>..Then dump them at the first <br/> opportunity</span>,
             <span>Result: your token collapses. <br/> Everyone goes home.</span>,
         ];
-        return data.map((text, i) => {
-            return (
-                <div key={i} className="fundraising-item">
-                    <div className="fundraising-item__number">{(i + 1).toString().padStart(2, '0')}</div>
-                    <p className="fundraising-item__text">{text}</p>
-                </div>
-            )
-        })
+        return data.map((text, i) => <FundraisingItem key={i} number={i} text={text} />)
     }
 
     ReactDOM.render(<FundraisingList />, document.querySelector('#fundraising-list'));
