@@ -10,9 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+  <script src='https://unpkg.com/babel-standalone@6.26.0/babel.js'></script>
   <title>Vision Capital</title>
 </head>
 <body>
+<div id="root"></div>
 <header>
   <div class="max-width header__inner">
     <div class="header-logo">
@@ -68,28 +72,7 @@
   <div class="max-width fundraising__inner">
     <h2 class="h2 fundraising-title">Traditional <br> Fundraising <br> <span class="highlight"> Doesn't Work </span>
       <br> in DeFi</h2>
-    <div class="fundraising-list">
-      <div class="fundraising-item">
-        <div class="fundraising-item__number">01</div>
-        <h3 class="fundraising-item__text">Without a big budget, it's hard to <br> approach venture investors</h3>
-      </div>
-      <div class="fundraising-item">
-        <div class="fundraising-item__number">02</div>
-        <h3 class="fundraising-item__text">VCs don't care about your DeFi idea <br> – only their gains</h3>
-      </div>
-      <div class="fundraising-item">
-        <div class="fundraising-item__number">03</div>
-        <h3 class="fundraising-item__text">They force you into selling your <br> tokens at a huge discount…</h3>
-      </div>
-      <div class="fundraising-item">
-        <div class="fundraising-item__number">04</div>
-        <h3 class="fundraising-item__text">...Then dump them at the first <br> opportunity</h3>
-      </div>
-      <div class="fundraising-item">
-        <div class="fundraising-item__number">05</div>
-        <h3 class="fundraising-item__text">Result: your token collapses. <br> Everyone goes home.</h3>
-      </div>
-    </div>
+    <div class="fundraising-list" id="fundraising-list"></div>
   </div>
 </section>
 <section>
@@ -178,5 +161,27 @@
     </div>
   </div>
 </section>
+<script type="text/babel">
+
+    const FundraisingList = ()=>{
+        const data = [
+            <span>Without a big budget, it's hard to <br/> approach venture investors</span>,
+            <span>VCs don't care about your DeFi idea <br/> – only their gains</span>,
+            <span>They force you into selling your <br/> tokens at a huge discount…</span>,
+            <span>..Then dump them at the first <br/> opportunity</span>,
+            <span>Result: your token collapses. <br/> Everyone goes home.</span>,
+        ];
+        return data.map((text, i) => {
+            return (
+                <div key={i} className="fundraising-item">
+                    <div className="fundraising-item__number">{(i + 1).toString().padStart(2, '0')}</div>
+                    <p className="fundraising-item__text">{text}</p>
+                </div>
+            )
+        })
+    }
+
+    ReactDOM.render(<FundraisingList />, document.querySelector('#fundraising-list'));
+</script>
 </body>
 </html>
