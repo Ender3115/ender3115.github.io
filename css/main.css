@@ -196,8 +196,9 @@ body {
 /* ––––––––– VISION ––––––––– */
 
 .vision {
-  background: url("/images/vision-bg.png") no-repeat center #FBFAFF;
+  background: url("/images/vision-bg.png") no-repeat center, linear-gradient(180deg, #FBFAFF 0%, #FFF 100%);
   background-size: cover;
+  border-radius: 250px 0 0 0;
 }
 
 .vision__inner {
@@ -213,11 +214,6 @@ body {
   color: var(--c-main-body);
   line-height: 28px;
   margin-top: 12px;
-}
-
-.vision-item__text {
-  display: flex;
-  flex-direction: column;
 }
 
 .vision-item__subtitle {
@@ -243,8 +239,9 @@ body {
 /* ––––––––– ACCESS ––––––––– */
 
 .access {
-  background: url("/images/access-bg.png") no-repeat center #FBFAFF;
+  background: url("/images/access-bg.png") no-repeat center, linear-gradient(180deg, #FBFAFF 0%, #FFF 100%);
   background-size: cover;
+  border-radius: 0 250px 0 0;
 }
 
 .access__inner {
