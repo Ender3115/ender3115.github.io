@@ -264,25 +264,39 @@ body {
 
 .defipi {
   display: flex;
-  padding: 0 0 200px 0;
-  position: relative;
-}
-
-.defipi__inner {
   padding: 127px 0;
-}
-
-.defipi-image {
-  display: flex;
-  justify-content: flex-end;
   position: relative;
+  min-height: 830px;
 }
 
-.defipi-logo {
+.defipi__bg-holder {
   position: absolute;
-  z-index: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 590px;
 }
 
+.defipi__bg {
+  background: url('/images/defipi/defipi-bg.jpg') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  z-index: 2;
+}
+
+.defipi__logo {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 
 /* ––––––––– END DEFIPI ––––––––– */
 
