@@ -254,6 +254,38 @@ body {
 
 /* ––––––––– END ACCESS ––––––––– */
 
+/* ––––––––– DEFIPI ––––––––– */
+
+.qwe {
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+}
+
+.defipi {
+  display: flex;
+  padding: 0 0 200px 0;
+  position: relative;
+}
+
+.defipi__inner {
+  padding: 127px 0;
+}
+
+.defipi-image {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.defipi-logo {
+  position: absolute;
+  z-index: 0;
+}
+
+
+/* ––––––––– END DEFIPI ––––––––– */
+
 /* ––––––––– COMPONENTS ––––––––– */
 
 .button {
