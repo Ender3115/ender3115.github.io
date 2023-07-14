@@ -305,20 +305,22 @@ body {
   position: relative;
 }
 
-.defipi-content__texts {
+.defipi-content__text {
   margin-top: 52px;
-}
-
-.content-text {
   color: var(--c-main-body);
   font-size: 18px;
-  line-height: 28px;
   max-width: 580px;
+  line-height: 28px;
 }
 
-.content-text:last-child {
-  margin-top: 70px;
+.defipi-content__text p:last-child {
+  margin-top: 64px;
 }
+
+.defipi-content__logo {
+  margin-bottom: 15px;
+}
+
 
 /* ––––––––– END DEFIPI ––––––––– */
 
