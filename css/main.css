@@ -257,7 +257,6 @@ body {
 /* ––––––––– DEFIPI ––––––––– */
 
 .defipi {
-  display: flex;
   padding: 127px 0;
   position: relative;
   min-height: 830px;
@@ -265,14 +264,19 @@ body {
 
 .defipi__inner {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .defipi__bg-holder {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
   bottom: 0;
+  height: 830px;
   width: 590px;
+  margin-right: 260px;
 }
 
 .defipi__bg {
@@ -286,7 +290,6 @@ body {
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
   z-index: 2;
-  visibility: hidden;
 }
 
 .defipi__logo {
@@ -295,12 +298,11 @@ body {
   left: 100%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  visibility: hidden;
 }
 
 .defipi-content {
-  display: flex;
-  flex-direction: column;
+  padding-right: 251px;
+  position: relative;
 }
 
 .defipi-content__texts {
