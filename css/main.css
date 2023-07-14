@@ -286,7 +286,7 @@ body {
   border-top-right-radius: 200px;
   border-bottom-right-radius: 200px;
   z-index: 2;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .defipi__logo {
@@ -295,7 +295,7 @@ body {
   left: 100%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 .defipi-content {
