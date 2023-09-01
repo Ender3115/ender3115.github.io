@@ -347,6 +347,90 @@ body {
 
 /* ––––––––– END PARTNERSHIP ––––––––– */
 
+/* ––––––––– JOIN ––––––––– */
+
+.join {
+  background: url('/images/join-bg.png') no-repeat center var(--c-main-body);
+  ;
+  background-size: cover;
+  border-radius: 250px 0px 0px 0px;
+}
+
+.join__inner {
+  padding: 179px 130px;
+}
+
+.join-header__title {
+  color: var(--c-main-white);
+}
+
+.join-header__subtitle {
+  color: var(--c-main-gray-light);
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.join-form {
+  margin-top: 64px;
+}
+
+.join-form__row {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.join-form__row:first-child {
+  margin-top: 0;
+}
+
+.join-form__button {
+  margin-top: 40px;
+}
+
+.join-footer {
+  display: flex;
+}
+
+.join-info {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.join-info__logos {
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+}
+
+.qqq {
+  display: flex;
+  color: var(--c-main-gray-light);
+  gap: 40px;
+  font-size: 14px;
+  font-weight: var(--fw-medium);
+  margin-top: 30px;
+}
+
+.join-info__qqq__email {
+  text-decoration: underline;
+}
+
+.join-info__qqq__email:hover {
+  text-decoration: none;
+}
+
+.join-info__qqq_telegram {
+  text-decoration: underline;
+}
+
+.join-info__qqq_telegram:hover {
+  text-decoration: none;
+}
+
+/* ––––––––– END JOIN ––––––––– */
+
 /* ––––––––– COMPONENTS ––––––––– */
 
 .button {
@@ -447,4 +531,28 @@ body {
   justify-content: center;
 }
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field__label {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--c-main-gray-light);
+}
+
+.form-field__input {
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid #F4F5F4;
+  background: #FFF;
+  width: 340px;
+}
+
+
 /* ––––––––– END COMPONENTS ––––––––– */
+
+/*form-field*/
+/*form-field__input*/
