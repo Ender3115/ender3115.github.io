@@ -118,7 +118,7 @@ body {
   margin: 0 auto;
 }
 
-.pipeline-header__line {
+.line {
   height: 2px;
   flex: 1;
   border: 1px solid #F4F5F4;
@@ -132,14 +132,14 @@ body {
   flex-shrink: 0;
 }
 
-.pipeline-logos {
+.logos {
   display: flex;
   justify-content: center;
   padding-top: 53px;
   gap: 20px;
 }
 
-.pipeline-logos__logo {
+.logos-logo {
   flex-shrink: 0;
   width: 220px;
   display: flex;
@@ -324,6 +324,29 @@ body {
 
 /* ––––––––– END DEFIPI ––––––––– */
 
+/* ––––––––– PARTNERSHIP ––––––––– */
+
+.partnership__inner {
+  padding: 200px 0;
+}
+
+.partnership-header {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.partnership-title {
+  color: var(--c-main-body);
+  font-size: 24px;
+  font-weight: var(--fw-medium);
+  line-height: 36px;
+  padding: 0 24px;
+}
+
+/* ––––––––– END PARTNERSHIP ––––––––– */
+
 /* ––––––––– COMPONENTS ––––––––– */
 
 .button {
@@ -401,6 +424,27 @@ body {
   font-weight: var(--fw-medium);
   margin-left: 12px;
   margin-top: 4px;
+}
+
+.line {
+  height: 2px;
+  flex: 1;
+  border: 1px solid #F4F5F4;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  padding-top: 53px;
+  gap: 20px;
+}
+
+.logos-logo {
+  flex-shrink: 0;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ––––––––– END COMPONENTS ––––––––– */
