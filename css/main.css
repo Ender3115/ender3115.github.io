@@ -351,9 +351,8 @@ body {
 
 .join {
   background: url('/images/join-bg.png') no-repeat center var(--c-main-body);
-  ;
   background-size: cover;
-  border-radius: 250px 0px 0px 0px;
+  border-radius: 250px 0 0 0;
 }
 
 .join__inner {
@@ -404,7 +403,7 @@ body {
   justify-content: right;
 }
 
-.qqq {
+.join-contacts {
   display: flex;
   color: var(--c-main-gray-light);
   gap: 40px;
@@ -413,19 +412,19 @@ body {
   margin-top: 30px;
 }
 
-.join-info__qqq__email {
+.join__email {
   text-decoration: underline;
 }
 
-.join-info__qqq__email:hover {
+.join__email:hover {
   text-decoration: none;
 }
 
-.join-info__qqq_telegram {
+.join__telegram {
   text-decoration: underline;
 }
 
-.join-info__qqq_telegram:hover {
+.join__telegram:hover {
   text-decoration: none;
 }
 
